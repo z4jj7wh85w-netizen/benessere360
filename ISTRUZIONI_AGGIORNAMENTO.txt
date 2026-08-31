@@ -1,0 +1,15 @@
+AGGIORNAMENTO GITHUB
+1. Apri il repository benessere360.
+2. Add file > Upload files.
+3. Carica TUTTI i file contenuti in questa cartella/ZIP.
+4. Se GitHub chiede di sostituire file esistenti, conferma.
+5. Commit changes.
+6. Attendi 1-2 minuti e ricarica il sito pubblico.
+
+PAGINE:
+index.html = Pagina iniziale
+home.html = Home
+percorsi.html = Percorsi
+chi-siamo.html = Chi siamo
+risultati.html = Risultati
+partner.html = Partner

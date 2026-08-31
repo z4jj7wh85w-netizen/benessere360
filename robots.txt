@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://z4jj7wh85w-netizen.github.io/benessere360/sitemap.xml
