@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Benessere360 | Allenamento personalizzato e benessere femminile</title>
+<meta name="description" content="Percorsi personalizzati di allenamento e benessere femminile con supporto costante e approccio sostenibile.">
+<meta name="robots" content="index,follow">
+<style>
+:root{
+  --bg:#ffffff;
+  --text:#242424;
+  --muted:#666;
+  --cyan:#25b8cf;
+  --cyan-dark:#128fa4;
+  --purple:#6b5a88;
+  --mint:#d9f3ef;
+  --line:#e8e8e8;
+  --card:#fbfbfb;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--text);background:var(--bg);line-height:1.55}
+img{max-width:100%;display:block}
+a{text-decoration:none;color:inherit}
+.wrap{width:min(1160px,92vw);margin:auto}
+.header{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.96);border-bottom:1px solid var(--line);backdrop-filter:blur(8px)}
+.nav{min-height:96px;display:grid;grid-template-columns:290px 1fr auto;align-items:center;gap:24px}
+.brand{display:flex;align-items:center;gap:14px;font-size:30px}
+.brand img{width:86px;height:86px;object-fit:cover;border-radius:50%}
+.menu{display:flex;justify-content:flex-end;gap:28px;align-items:center;font-size:16px}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:15px 26px;background:#2d2928;color:#fff;border-radius:0;font-weight:700;transition:.2s}
+.btn:hover{transform:translateY(-2px)}
+.btn.cyan{background:var(--cyan);border-radius:999px}
+.hero{padding:68px 0 38px}
+.hero-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.hero h1{font-size:clamp(44px,5vw,74px);line-height:1.08;margin:0 0 28px;font-weight:500;letter-spacing:-1px}
+.kicker{font-size:13px;text-transform:uppercase;letter-spacing:.14em;color:var(--cyan-dark);font-weight:800}
+.checks{display:grid;gap:12px;margin:28px 0}
+.check::before{content:"✓";color:var(--cyan);font-weight:900;margin-right:12px}
+.photo{min-height:440px;background:linear-gradient(135deg,#ece8ef,#d9f3ef);display:flex;align-items:center;justify-content:center;color:#756f78;font-weight:700;position:relative;overflow:hidden}
+.photo:before,.photo:after{content:"";position:absolute;border-radius:50%;background:rgba(37,184,207,.18)}
+.photo:before{width:240px;height:240px;right:-50px;top:-40px}
+.photo:after{width:180px;height:180px;left:-50px;bottom:-50px;background:rgba(107,90,136,.14)}
+.section{padding:72px 0}
+.section.alt{background:#fafafa}
+.section h2{font-size:clamp(34px,4vw,56px);margin:0 0 22px;font-weight:500}
+.section h3{font-size:24px;margin:0 0 12px}
+.two{display:grid;grid-template-columns:1fr 1.1fr;gap:58px;align-items:center}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.card{border:1px solid var(--line);background:#fff;padding:30px;min-height:220px}
+.card.featured{border:2px solid var(--cyan)}
+.icon{width:54px;height:54px;border-radius:50%;background:var(--mint);display:grid;place-items:center;margin-bottom:20px;font-size:25px}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.step{padding:22px;border-top:3px solid var(--cyan);background:#fff}
+.price{font-size:42px;font-weight:800;line-height:1}
+.program{display:grid;grid-template-columns:1fr auto;gap:26px;align-items:start;border:1px solid var(--line);padding:34px;margin-bottom:28px;background:#fff}
+.program ul{padding-left:20px}
+.program .aside{min-width:180px;text-align:center;border-left:1px solid var(--line);padding-left:24px}
+.band{background:var(--cyan);color:#fff;padding:34px 0}
+.band .wrap{display:flex;justify-content:space-between;align-items:center;gap:24px}
+.footer{padding:54px 0;border-top:1px solid var(--line)}
+.footer-grid{display:grid;grid-template-columns:1.15fr 1fr 1fr;gap:44px}
+.contact-box{border-left:3px solid var(--cyan);padding-left:18px}
+.testimonials{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.quote{background:#fff;border:1px solid var(--line);padding:26px;min-height:190px}
+.results-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.beforeafter{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.beforeafter .photo{min-height:260px}
+.partner-grid{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}
+.small{font-size:14px;color:var(--muted)}
+.logo-note{font-size:12px;color:var(--muted)}
+.motion{animation:float 5s ease-in-out infinite}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;scroll-behavior:auto}}
+@media (max-width:900px){
+ .nav{grid-template-columns:1fr auto;min-height:82px}.brand span{display:none}.menu{display:none}.brand img{width:68px;height:68px}
+ .hero-grid,.two,.partner-grid{grid-template-columns:1fr}.cards,.steps,.testimonials,.results-grid{grid-template-columns:1fr}
+ .hero h1{font-size:46px}.program{grid-template-columns:1fr}.program .aside{border-left:0;border-top:1px solid var(--line);padding:22px 0 0;text-align:left}
+ .footer-grid{grid-template-columns:1fr}.band .wrap{display:grid}
+}
+</style>
+</head>
+<body>
+
+<header class="header">
+  <div class="wrap nav">
+    <a class="brand" href="index.html">
+      <img src="logo-benessere360.png" alt="Logo originale Benessere360">
+      <span>Benessere360</span>
+    </a>
+    <nav class="menu" aria-label="Navigazione principale">
+      <a href="home.html">Home</a>
+      <a href="percorsi.html">Percorsi</a>
+      <a href="chi-siamo.html">Chi siamo</a>
+      <a href="risultati.html">Risultati</a>
+      <a href="partner.html">Partner</a>
+    </nav>
+    <a class="btn" href="https://forms.gle/hT6ZBmqBuYM85QwWA" target="_blank" rel="noopener">Inizia ora</a>
+  </div>
+</header>
+
+
+<main>
+<section class="hero">
+ <div class="wrap hero-grid">
+  <div>
+   <h1>Ritrova il tuo benessere con un percorso costruito su misura.</h1>
+   <div class="checks">
+    <div class="check">Allenamento personalizzato</div>
+    <div class="check">Supporto costante</div>
+    <div class="check">Per ogni livello</div>
+   </div>
+   <a class="btn" href="https://forms.gle/hT6ZBmqBuYM85QwWA" target="_blank" rel="noopener">Inizia ora</a>
+  </div>
+  <div class="photo motion">Spazio per la tua foto originale</div>
+ </div>
+</section>
+<section class="section">
+ <div class="wrap two">
+  <div class="photo">Spazio per la tua foto originale</div>
+  <div>
+   <div class="kicker">La nostra filosofia</div>
+   <h2>Benessere sostenibile, senza ossessioni.</h2>
+   <div class="checks">
+    <div class="check">Sostenibilità</div>
+    <div class="check">Risultati duraturi</div>
+    <div class="check">Niente ossessioni</div>
+    <div class="check">Sentirsi bene nel proprio corpo</div>
+   </div>
+   <a class="btn" href="https://forms.gle/hT6ZBmqBuYM85QwWA" target="_blank" rel="noopener">Scopri i percorsi</a>
+  </div>
+ </div>
+</section>
+</main>
+
+
+<footer class="footer">
+ <div class="wrap footer-grid">
+   <div>
+     <h3>Contatti</h3>
+     <p>Hai una domanda? Siamo qui per aiutarti.</p>
+   </div>
+   <div class="contact-box">
+     <h3>WhatsApp</h3>
+     <p>Scrivici direttamente su WhatsApp</p>
+     <p class="small">Rispondiamo il prima possibile e ti aiutiamo a capire quale percorso può essere più adatto a te.</p>
+     <strong>+39-3804688894</strong>
+   </div>
+   <div class="contact-box">
+     <h3>Instagram</h3>
+     <p>Seguici su Instagram</p>
+     <p class="small">Consigli, allenamenti, risultati e contenuti dedicati al benessere.</p>
+     <strong>@benessere360</strong>
+   </div>
+ </div>
+</footer>
+
+</body></html>
