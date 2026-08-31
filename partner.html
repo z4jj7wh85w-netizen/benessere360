@@ -79,6 +79,16 @@ a{text-decoration:none;color:inherit}
  .hero h1{font-size:46px}.program{grid-template-columns:1fr}.program .aside{border-left:0;border-top:1px solid var(--line);padding:22px 0 0;text-align:left}
  .footer-grid{grid-template-columns:1fr}.band .wrap{display:grid}
 }
+
+.photo.auto-photo { position:relative; }
+.photo.auto-photo > img.user-photo{
+  position:absolute; inset:0; width:100%; height:100%;
+  object-fit:cover; z-index:2;
+}
+.photo.auto-photo > .placeholder-label{
+  position:relative; z-index:1;
+}
+
 </style>
 
 <meta property="og:title" content="Partner Bombafit | Benessere360">
@@ -118,7 +128,7 @@ a{text-decoration:none;color:inherit}
    <p><strong>Codice sconto: AMELIA10</strong></p>
    <a class="btn" href="#" aria-label="Acquista su Bombafit">Acquista su Bombafit</a>
   </div>
-  <div class="photo">Spazio per la foto partner</div>
+  <div class="photo auto-photo"><span class="placeholder-label">Spazio per la foto partner</span><img class="user-photo" src="partner.jpg" alt="" onerror="this.style.display='none'"></div>
  </div>
 </section>
 </main>

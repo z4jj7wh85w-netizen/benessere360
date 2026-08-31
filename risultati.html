@@ -79,6 +79,16 @@ a{text-decoration:none;color:inherit}
  .hero h1{font-size:46px}.program{grid-template-columns:1fr}.program .aside{border-left:0;border-top:1px solid var(--line);padding:22px 0 0;text-align:left}
  .footer-grid{grid-template-columns:1fr}.band .wrap{display:grid}
 }
+
+.photo.auto-photo { position:relative; }
+.photo.auto-photo > img.user-photo{
+  position:absolute; inset:0; width:100%; height:100%;
+  object-fit:cover; z-index:2;
+}
+.photo.auto-photo > .placeholder-label{
+  position:relative; z-index:1;
+}
+
 </style>
 
 <meta property="og:title" content="Risultati e testimonianze | Benessere360">
@@ -113,9 +123,9 @@ a{text-decoration:none;color:inherit}
   <h1 style="font-size:56px">Risultati</h1>
   <p class="small">Qui potrai sostituire facilmente i segnaposto con le tue foto reali prima/dopo.</p>
   <div class="results-grid">
-   <div class="beforeafter"><div class="photo">Prima</div><div class="photo">Dopo</div></div>
-   <div class="beforeafter"><div class="photo">Prima</div><div class="photo">Dopo</div></div>
-   <div class="beforeafter"><div class="photo">Prima</div><div class="photo">Dopo</div></div>
+   <div class="beforeafter"><div class="photo auto-photo"><span class="placeholder-label">Prima</span><img class="user-photo" src="risultato-1-prima.jpg" alt="Risultato 1 prima" onerror="this.style.display=\'none\'"></div><div class="photo auto-photo"><span class="placeholder-label">Dopo</span><img class="user-photo" src="risultato-1-dopo.jpg" alt="Risultato 1 dopo" onerror="this.style.display=\'none\'"></div></div>
+   <div class="beforeafter"><div class="photo auto-photo"><span class="placeholder-label">Prima</span><img class="user-photo" src="risultato-2-prima.jpg" alt="Risultato 2 prima" onerror="this.style.display=\'none\'"></div><div class="photo auto-photo"><span class="placeholder-label">Dopo</span><img class="user-photo" src="risultato-2-dopo.jpg" alt="Risultato 2 dopo" onerror="this.style.display=\'none\'"></div></div>
+   <div class="beforeafter"><div class="photo auto-photo"><span class="placeholder-label">Prima</span><img class="user-photo" src="risultato-3-prima.jpg" alt="Risultato 3 prima" onerror="this.style.display=\'none\'"></div><div class="photo auto-photo"><span class="placeholder-label">Dopo</span><img class="user-photo" src="risultato-3-dopo.jpg" alt="Risultato 3 dopo" onerror="this.style.display=\'none\'"></div></div>
   </div>
  </div>
 </section>

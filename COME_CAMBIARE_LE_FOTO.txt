@@ -1,0 +1,37 @@
+BENESSERE360 — CAMBIO FOTO FACILE
+
+Il sito rimane graficamente uguale quando le foto non sono presenti.
+Per mostrare una tua foto, caricala nel repository GitHub con ESATTAMENTE uno di questi nomi:
+
+PAGINA INIZIALE
+- pagina-iniziale-1.jpg
+- pagina-iniziale-2.jpg
+
+HOME
+- home-1.jpg
+- home-2.jpg
+
+CHI SIAMO
+- chi-siamo.jpg
+
+RISULTATI
+- risultato-1-prima.jpg
+- risultato-1-dopo.jpg
+- risultato-2-prima.jpg
+- risultato-2-dopo.jpg
+- risultato-3-prima.jpg
+- risultato-3-dopo.jpg
+
+PARTNER
+- partner.jpg
+
+COME FARE
+1. Rinomina la tua foto con il nome esatto scelto sopra.
+2. GitHub > repository benessere360 > Add file > Upload files.
+3. Carica la foto.
+4. Commit changes.
+5. Attendi circa 1-2 minuti e aggiorna il sito.
+
+PER CAMBIARE UNA FOTO IN FUTURO:
+carica una nuova immagine con LO STESSO IDENTICO NOME, sostituendo quella precedente.
+Non devi modificare i file HTML.

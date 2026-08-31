@@ -79,6 +79,16 @@ a{text-decoration:none;color:inherit}
  .hero h1{font-size:46px}.program{grid-template-columns:1fr}.program .aside{border-left:0;border-top:1px solid var(--line);padding:22px 0 0;text-align:left}
  .footer-grid{grid-template-columns:1fr}.band .wrap{display:grid}
 }
+
+.photo.auto-photo { position:relative; }
+.photo.auto-photo > img.user-photo{
+  position:absolute; inset:0; width:100%; height:100%;
+  object-fit:cover; z-index:2;
+}
+.photo.auto-photo > .placeholder-label{
+  position:relative; z-index:1;
+}
+
 </style>
 
 <meta property="og:title" content="Chi siamo | Benessere360">
@@ -116,7 +126,7 @@ a{text-decoration:none;color:inherit}
     <p>Benessere360 nasce con un obiettivo semplice: aiutare le donne a costruire un corpo forte, tonico e sano attraverso un metodo personalizzato.</p>
     <p>Ogni percorso viene adattato alle esigenze della persona, senza allenamenti standardizzati.</p>
    </div>
-   <div class="photo">Spazio per la tua foto originale</div>
+   <div class="photo auto-photo"><span class="placeholder-label">Spazio per la tua foto originale</span><img class="user-photo" src="chi-siamo.jpg" alt="" onerror="this.style.display='none'"></div>
   </div>
  </div>
 </section>
