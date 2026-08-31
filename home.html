@@ -190,6 +190,37 @@ a{text-decoration:none;color:inherit}
   .first-page-full-image .photo{min-height:420px}
 }
 
+
+
+/* August 31 image refinements */
+.landing-overview{padding:68px 0 72px}
+.landing-overview-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(420px,.95fr);gap:58px;align-items:stretch}
+.landing-copy{display:flex;flex-direction:column;justify-content:flex-start}
+.landing-copy .philosophy-block{margin-top:64px;padding-top:56px;border-top:1px solid var(--line)}
+.landing-overview-photo{min-height:100%;height:100%;align-self:stretch}
+.landing-overview-photo.photo{min-height:760px}
+.landing-overview-photo > img.user-photo{object-fit:cover !important;padding:0 !important}
+
+.home-sticker-stage{min-height:620px;background:#fff;overflow:visible}
+.home-sticker-stage > img.user-photo{object-fit:contain !important;padding:0 !important;transform:scale(1.13);transform-origin:center bottom}
+.partner-large-photo{min-height:700px;background:#fff}
+.partner-large-photo > img.user-photo{object-fit:contain !important;padding:0 !important}
+
+@media (max-width:900px){
+  .landing-overview{padding:40px 0 52px}
+  .landing-overview-grid{grid-template-columns:1fr;gap:34px}
+  .landing-copy .philosophy-block{margin-top:42px;padding-top:38px}
+  .landing-overview-photo.photo{min-height:620px}
+  .home-sticker-stage{min-height:500px;overflow:hidden}
+  .home-sticker-stage > img.user-photo{transform:scale(1.08)}
+  .partner-large-photo{min-height:560px}
+}
+@media (max-width:480px){
+  .landing-overview-photo.photo{min-height:520px}
+  .home-sticker-stage{min-height:440px}
+  .partner-large-photo{min-height:500px}
+}
+
 </style>
 
 <meta property="og:title" content="Metodo Benessere360 | Allenamento e nutrizione su misura">
@@ -273,7 +304,7 @@ a{text-decoration:none;color:inherit}
    </div>
    <a class="btn" href="risultati.html">Guarda le testimonianze</a>
   </div>
-  <div class="photo auto-photo"><span class="placeholder-label">Spazio per la tua foto originale</span><img class="user-photo contain-photo" src="home-2.jpg" alt="" onerror="this.style.display='none'"></div>
+  <div class="photo auto-photo home-sticker-stage"><span class="placeholder-label">Spazio per la tua foto originale</span><img class="user-photo contain-photo" src="home-2-sticker.png" alt="" onerror="this.style.display='none'"></div>
  </div>
 </section>
 <section class="band">

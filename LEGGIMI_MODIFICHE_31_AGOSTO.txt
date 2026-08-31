@@ -1,0 +1,12 @@
+BENESSERE360 — MODIFICHE FOTO 31 AGOSTO
+
+- Pagina iniziale: foto resa molto più grande e sviluppata verticalmente dall'inizio del primo blocco di testo fino alla fine del blocco “La nostra filosofia”.
+- Home: seconda foto ingrandita e predisposta come elemento in primo piano. Per ottenere lo scontorno reale tipo sticker serve la foto HOME-2 caricata separatamente, non dentro lo ZIP.
+- Partner: foto ingrandita sensibilmente senza deformarla.
+
+PUBBLICAZIONE
+1. Estrai lo ZIP.
+2. GitHub > repository benessere360 > Add file > Upload files.
+3. Carica tutti i file e sostituisci quelli esistenti.
+4. Commit changes.
+5. Attendi 1-2 minuti e ricarica il sito.
