@@ -1,0 +1,4 @@
+Benessere360 - aggiornamento 31 agosto
+- Footer: pulsanti Scrivici e Seguici resi neri come Inizia ora.
+- Home: entrambe le immagini sostituite con versioni PNG scontornate ottenute dalle foto originali, senza modificare colori o contenuto della persona.
+- Mobile: navigazione, spaziature, tipografia, CTA, footer, cards e immagini ottimizzati per smartphone.
