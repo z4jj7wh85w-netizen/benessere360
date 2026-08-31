@@ -1,0 +1,27 @@
+BENESSERE360 — FIX MOBILE + FOTO OTTIMIZZATE
+
+QUESTO PACCHETTO:
+- mantiene il design desktop attuale;
+- aggiunge il menu hamburger su smartphone;
+- include già le foto ottimizzate e rinominate correttamente:
+  chi-siamo.jpg
+  home-1.jpg
+  home-2.jpg
+  pagina-iniziale-1.jpg
+  partner.jpg
+
+NOTA:
+- pagina-iniziale-2.jpg non è inclusa perché non è stata fornita: il relativo spazio resta invariato.
+- la sezione Risultati resta invariata.
+
+COME AGGIORNARE:
+1. Apri il repository GitHub "benessere360".
+2. Add file > Upload files.
+3. Carica TUTTI i file contenuti in questo ZIP (dopo averlo estratto).
+4. Conferma la sostituzione dei file esistenti.
+5. Commit changes.
+6. Attendi 1-2 minuti.
+7. Ricarica il sito.
+
+LINK:
+https://z4jj7wh85w-netizen.github.io/benessere360/

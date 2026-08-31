@@ -89,6 +89,66 @@ a{text-decoration:none;color:inherit}
   position:relative; z-index:1;
 }
 
+
+/* Mobile navigation fix */
+.menu-toggle{
+  display:none;
+  width:44px;height:44px;
+  border:1px solid var(--line);
+  background:#fff;
+  border-radius:10px;
+  align-items:center;justify-content:center;
+  font-size:24px;line-height:1;
+  cursor:pointer;color:var(--text);
+}
+@media (max-width:900px){
+  .header{position:sticky;top:0}
+  .nav{
+    min-height:78px;
+    grid-template-columns:auto 1fr auto;
+    gap:10px;
+    position:relative;
+  }
+  .brand{min-width:0}
+  .brand img{width:60px;height:60px}
+  .brand span{display:none}
+  .nav > .btn{padding:11px 15px;font-size:14px;white-space:nowrap}
+  .menu-toggle{display:inline-flex}
+  .menu{
+    display:none;
+    position:absolute;
+    top:calc(100% + 1px);
+    left:0;right:0;
+    background:#fff;
+    border:1px solid var(--line);
+    box-shadow:0 14px 30px rgba(0,0,0,.08);
+    padding:10px;
+    flex-direction:column;
+    align-items:stretch;
+    gap:0;
+    z-index:50;
+  }
+  .menu.open{display:flex}
+  .menu a{
+    padding:14px 12px;
+    border-bottom:1px solid var(--line);
+    font-size:16px;
+  }
+  .menu a:last-child{border-bottom:0}
+  .hero{padding:40px 0 24px}
+  .hero h1{font-size:clamp(36px,10vw,48px)}
+  .section{padding:52px 0}
+  .photo{min-height:320px}
+  .wrap{width:min(100% - 28px,1160px)}
+}
+@media (max-width:480px){
+  .nav > .btn{padding:10px 12px;font-size:13px}
+  .brand img{width:54px;height:54px}
+  .menu-toggle{width:40px;height:40px}
+  .hero h1{font-size:36px}
+  .section h2{font-size:34px}
+}
+
 </style>
 
 <meta property="og:title" content="Chi siamo | Benessere360">
@@ -112,6 +172,7 @@ a{text-decoration:none;color:inherit}
       <a href="risultati.html">Risultati</a>
       <a href="partner.html">Partner</a>
     </nav>
+    <button class="menu-toggle" type="button" aria-label="Apri menu" aria-expanded="false">☰</button>
     <a class="btn" href="https://forms.gle/hT6ZBmqBuYM85QwWA" target="_blank" rel="noopener">Inizia ora</a>
   </div>
 </header>
@@ -162,5 +223,36 @@ a{text-decoration:none;color:inherit}
   </div>
 </footer>
 
+
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const toggle = document.querySelector('.menu-toggle');
+  const menu = document.querySelector('.menu');
+  if (!toggle || !menu) return;
+
+  toggle.addEventListener('click', function () {
+    const isOpen = menu.classList.toggle('open');
+    toggle.setAttribute('aria-expanded', String(isOpen));
+    toggle.textContent = isOpen ? '✕' : '☰';
+  });
+
+  menu.querySelectorAll('a').forEach(function (link) {
+    link.addEventListener('click', function () {
+      menu.classList.remove('open');
+      toggle.setAttribute('aria-expanded', 'false');
+      toggle.textContent = '☰';
+    });
+  });
+
+  document.addEventListener('click', function (event) {
+    if (!menu.contains(event.target) && !toggle.contains(event.target)) {
+      menu.classList.remove('open');
+      toggle.setAttribute('aria-expanded', 'false');
+      toggle.textContent = '☰';
+    }
+  });
+});
+</script>
 
 </body></html>
