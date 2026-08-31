@@ -149,6 +149,47 @@ a{text-decoration:none;color:inherit}
   .section h2{font-size:34px}
 }
 
+
+/* Requested refinements */
+@media (max-width:900px){
+  .menu-toggle{
+    width:auto;
+    min-width:74px;
+    padding:0 14px;
+    font-size:15px;
+    font-weight:700;
+    letter-spacing:.01em;
+  }
+}
+/* Preserve full user images */
+.photo.auto-photo > img.user-photo.contain-photo{
+  object-fit:contain !important;
+  background:#fff;
+  padding:18px;
+  box-sizing:border-box;
+}
+.photo.auto-photo > img.user-photo.contain-photo.no-pad{
+  padding:0;
+}
+/* First page specific layout */
+.first-page-stack{
+  display:grid;
+  grid-template-columns:1fr;
+  gap:28px;
+}
+.first-page-stack .text-block{
+  text-align:left;
+}
+.first-page-full-image{
+  margin-top:12px;
+}
+.first-page-full-image .photo{
+  min-height:520px;
+}
+@media (max-width:900px){
+  .first-page-full-image .photo{min-height:420px}
+}
+
 </style>
 
 <meta property="og:title" content="Percorsi fitness personalizzati | Benessere360">
@@ -172,7 +213,7 @@ a{text-decoration:none;color:inherit}
       <a href="risultati.html">Risultati</a>
       <a href="partner.html">Partner</a>
     </nav>
-    <button class="menu-toggle" type="button" aria-label="Apri menu" aria-expanded="false">☰</button>
+    <button class="menu-toggle" type="button" aria-label="Apri menu" aria-expanded="false">Menù</button>
     <a class="btn" href="https://forms.gle/hT6ZBmqBuYM85QwWA" target="_blank" rel="noopener">Inizia ora</a>
   </div>
 </header>
@@ -186,7 +227,7 @@ a{text-decoration:none;color:inherit}
 
   <article class="program">
    <div>
-    <h2 style="font-size:34px">PROGRAMMA STANDARD</h2>
+    <h2 style="font-size:34px">🌿 PROGRAMMA STANDARD</h2>
     <p><strong>Il punto di partenza per costruire il tuo percorso in palestra con metodo.</strong></p>
     <p>Pensato per chi si avvicina per la prima volta alla palestra o si è già allenato senza un metodo strutturato. Un programma semplice, progressivo e guidato, pensato per evitare errori e farti costruire basi solide.</p>
     <h3>Include:</h3>
@@ -198,7 +239,7 @@ a{text-decoration:none;color:inherit}
 
   <article class="program">
    <div>
-    <h2 style="font-size:34px">PROGRAMMA PERSONALIZZATO</h2>
+    <h2 style="font-size:34px">💪 PROGRAMMA PERSONALIZZATO</h2>
     <p><strong>Un percorso completamente adattato su di te.</strong></p>
     <p>Consigliato per chi ha esigenze specifiche (tempo, attrezzatura, infortuni) o per chi ha un livello intermedio/avanzato. Un percorso costruito su misura, pensato per adattarsi alle tue esigenze, ai tuoi obiettivi e alla tua quotidianità.</p>
     <h3>Include:</h3>
@@ -210,7 +251,7 @@ a{text-decoration:none;color:inherit}
 
   <article class="program">
    <div>
-    <h2 style="font-size:34px">PREMIUM</h2>
+    <h2 style="font-size:34px">👑 PREMIUM</h2>
     <p><strong>Il percorso completo per un cambiamento a 360°.</strong></p>
     <p>Un percorso completo che unisce allenamento e alimentazione, pensato per chi vuole prendersi cura di sé a 360° e raggiungere i propri obiettivi con un approccio completo e personalizzato.</p>
     <h3>Include:</h3>
@@ -263,14 +304,14 @@ document.addEventListener('DOMContentLoaded', function () {
   toggle.addEventListener('click', function () {
     const isOpen = menu.classList.toggle('open');
     toggle.setAttribute('aria-expanded', String(isOpen));
-    toggle.textContent = isOpen ? '✕' : '☰';
+    toggle.textContent = isOpen ? 'Chiudi' : 'Menù';
   });
 
   menu.querySelectorAll('a').forEach(function (link) {
     link.addEventListener('click', function () {
       menu.classList.remove('open');
       toggle.setAttribute('aria-expanded', 'false');
-      toggle.textContent = '☰';
+      toggle.textContent = 'Menù';
     });
   });
 
@@ -278,7 +319,7 @@ document.addEventListener('DOMContentLoaded', function () {
     if (!menu.contains(event.target) && !toggle.contains(event.target)) {
       menu.classList.remove('open');
       toggle.setAttribute('aria-expanded', 'false');
-      toggle.textContent = '☰';
+      toggle.textContent = 'Menù';
     }
   });
 });

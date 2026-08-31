@@ -1,0 +1,20 @@
+BENESSERE360 — MODIFICHE RICHIESTE
+
+Aggiornamenti inclusi:
+- Mobile: pulsante testuale "Menù" al posto delle tre linee.
+- Pagina iniziale: testi allineati a sinistra; mantenuta una sola immagine, a tutta larghezza.
+- Footer invariato.
+- Home: entrambe le foto mostrate intere, con margine bianco, senza tagli.
+- Programmi: aggiunte emoji ai titoli:
+  🌿 Standard
+  💪 Personalizzato
+  👑 Premium
+- Partner: immagine mostrata intera, senza tagli, con margine bianco.
+
+COME PUBBLICARE
+1. Estrai questo ZIP.
+2. GitHub > repository benessere360 > Add file > Upload files.
+3. Carica tutti i file estratti.
+4. Conferma la sostituzione dei file esistenti.
+5. Commit changes.
+6. Attendi 1-2 minuti e ricarica il sito.

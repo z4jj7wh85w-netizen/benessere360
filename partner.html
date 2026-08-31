@@ -149,6 +149,47 @@ a{text-decoration:none;color:inherit}
   .section h2{font-size:34px}
 }
 
+
+/* Requested refinements */
+@media (max-width:900px){
+  .menu-toggle{
+    width:auto;
+    min-width:74px;
+    padding:0 14px;
+    font-size:15px;
+    font-weight:700;
+    letter-spacing:.01em;
+  }
+}
+/* Preserve full user images */
+.photo.auto-photo > img.user-photo.contain-photo{
+  object-fit:contain !important;
+  background:#fff;
+  padding:18px;
+  box-sizing:border-box;
+}
+.photo.auto-photo > img.user-photo.contain-photo.no-pad{
+  padding:0;
+}
+/* First page specific layout */
+.first-page-stack{
+  display:grid;
+  grid-template-columns:1fr;
+  gap:28px;
+}
+.first-page-stack .text-block{
+  text-align:left;
+}
+.first-page-full-image{
+  margin-top:12px;
+}
+.first-page-full-image .photo{
+  min-height:520px;
+}
+@media (max-width:900px){
+  .first-page-full-image .photo{min-height:420px}
+}
+
 </style>
 
 <meta property="og:title" content="Partner Bombafit | Benessere360">
@@ -172,7 +213,7 @@ a{text-decoration:none;color:inherit}
       <a href="risultati.html">Risultati</a>
       <a href="partner.html">Partner</a>
     </nav>
-    <button class="menu-toggle" type="button" aria-label="Apri menu" aria-expanded="false">☰</button>
+    <button class="menu-toggle" type="button" aria-label="Apri menu" aria-expanded="false">Menù</button>
     <a class="btn" href="https://forms.gle/hT6ZBmqBuYM85QwWA" target="_blank" rel="noopener">Inizia ora</a>
   </div>
 </header>
@@ -189,7 +230,7 @@ a{text-decoration:none;color:inherit}
    <p><strong>Codice sconto: AMELIA10</strong></p>
    <a class="btn" href="#" aria-label="Acquista su Bombafit">Acquista su Bombafit</a>
   </div>
-  <div class="photo auto-photo"><span class="placeholder-label">Spazio per la foto partner</span><img class="user-photo" src="partner.jpg" alt="" onerror="this.style.display='none'"></div>
+  <div class="photo auto-photo"><span class="placeholder-label">Spazio per la foto partner</span><img class="user-photo contain-photo" src="partner.jpg" alt="" onerror="this.style.display='none'"></div>
  </div>
 </section>
 </main>
@@ -233,14 +274,14 @@ document.addEventListener('DOMContentLoaded', function () {
   toggle.addEventListener('click', function () {
     const isOpen = menu.classList.toggle('open');
     toggle.setAttribute('aria-expanded', String(isOpen));
-    toggle.textContent = isOpen ? '✕' : '☰';
+    toggle.textContent = isOpen ? 'Chiudi' : 'Menù';
   });
 
   menu.querySelectorAll('a').forEach(function (link) {
     link.addEventListener('click', function () {
       menu.classList.remove('open');
       toggle.setAttribute('aria-expanded', 'false');
-      toggle.textContent = '☰';
+      toggle.textContent = 'Menù';
     });
   });
 
@@ -248,7 +289,7 @@ document.addEventListener('DOMContentLoaded', function () {
     if (!menu.contains(event.target) && !toggle.contains(event.target)) {
       menu.classList.remove('open');
       toggle.setAttribute('aria-expanded', 'false');
-      toggle.textContent = '☰';
+      toggle.textContent = 'Menù';
     }
   });
 });
