@@ -270,6 +270,13 @@ a{text-decoration:none;color:inherit}
 <meta property="og:type" content="website">
 <meta name="theme-color" content="#25b8cf">
 
+
+<style>
+.feedback-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;margin-top:28px}
+.feedback-card{margin:0;border-radius:18px;overflow:hidden;background:#fff;box-shadow:0 12px 30px rgba(0,0,0,.10)}
+.feedback-card img{display:block;width:100%;height:auto}
+@media(max-width:820px){.feedback-grid{grid-template-columns:1fr;gap:18px}}
+</style>
 </head>
 <body>
 
@@ -307,10 +314,10 @@ a{text-decoration:none;color:inherit}
 <section class="section alt">
  <div class="wrap">
   <h2>Le loro parole</h2>
-  <div class="testimonials">
-   <div class="quote">Spazio per una testimonianza reale o screenshot cliente.</div>
-   <div class="quote">Spazio per una testimonianza reale o screenshot cliente.</div>
-   <div class="quote">Spazio per una testimonianza reale o screenshot cliente.</div>
+  <div class="feedback-grid" aria-label="Feedback clienti">
+   <figure class="feedback-card"><img src="feedback-1.jpg" alt="Feedback cliente 1"></figure>
+   <figure class="feedback-card"><img src="feedback-2.jpg" alt="Feedback cliente 2"></figure>
+   <figure class="feedback-card"><img src="feedback-3.jpg" alt="Feedback cliente 3"></figure>
   </div>
  </div>
 </section>
