@@ -278,11 +278,11 @@ a{text-decoration:none;color:inherit}
 @media(max-width:820px){.feedback-grid{grid-template-columns:1fr;gap:18px}}
 </style>
 <style>
-.results-final-grid{display:grid;gap:46px;margin-top:30px}
+.results-final-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:30px;margin-top:30px;align-items:start}
 .result-pair-images{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;align-items:start}
 .result-pair-images img{display:block;width:100%;height:auto;border-radius:16px}
 .result-pair-caption{margin:16px 0 0;text-align:center;font-size:18px;font-weight:700;letter-spacing:.01em}
-@media(max-width:700px){.results-final-grid{gap:34px}.result-pair-images{gap:10px}.result-pair-images img{border-radius:10px}.result-pair-caption{font-size:16px;margin-top:12px}}
+@media(max-width:700px){.results-final-grid{grid-template-columns:1fr;gap:34px}.result-pair-images{gap:10px}.result-pair-images img{border-radius:10px}.result-pair-caption{font-size:16px;margin-top:12px}}
 </style>
 </head>
 <body>
