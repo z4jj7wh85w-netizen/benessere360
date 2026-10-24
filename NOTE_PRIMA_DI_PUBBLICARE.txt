@@ -1,0 +1,21 @@
+BENESSERE360 — PACCHETTO APPROVATO 24 OTTOBRE 2026
+
+Questo pacchetto contiene le modifiche approvate alle pagine del sito:
+1 Homepage: titolo originale, nuovo sottotitolo e pulsante.
+2 Come iniziare: questionario, chiamata conoscitiva gratuita, proposta, avvio (senza REVOO).
+3 Percorsi: solo Personalizzato e Premium, con descrizioni approvate e prezzi conservati.
+4 Risultati: nessun nuovo caso di Giulia; fotografie e testimonianze esistenti conservate.
+5 Pagina Chi siamo: contenuto principale invariato, aggiornati solo menu e footer comune.
+6 Identità grafica: palette, stili e foto originali conservati.
+7 Menu: Home, Chi siamo, Percorsi, Risultati, Partner, Contatti.
+8 Pulsanti: questionario e WhatsApp.
+
+IMPORTANTE:
+- NON È STATO PUBBLICATO su GitHub Pages.
+- La base è una copia del sito salvata il 29 settembre 2026.
+- Prima di applicare il pacchetto al repository z4jj7wh85w-netizen/benessere360
+  confrontare i file della versione attuale per evitare sovrascritture indesiderate.
+- Verificare manualmente la validità dei collegamenti al questionario Google Forms,
+  all'account Instagram e al numero WhatsApp presenti nei file.
+- Foto, risultati e testimonianze nuove non sono stati inseriti.
+

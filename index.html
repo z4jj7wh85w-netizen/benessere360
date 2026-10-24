@@ -1,11 +1,12 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="it">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
 <title>Benessere360 | Allenamento personalizzato e benessere femminile</title>
-<meta name="description" content="Percorsi personalizzati di allenamento e benessere femminile con supporto costante e approccio sostenibile.">
-<meta name="robots" content="index,follow">
+<meta content="Percorsi personalizzati di allenamento e benessere femminile con supporto costante e approccio sostenibile." name="description"/>
+<meta content="index,follow" name="robots"/>
 <style>
 :root{
   --bg:#ffffff;
@@ -294,95 +295,105 @@ a{text-decoration:none;color:inherit}
   .footer{padding-top:32px}
 }
 
+
+/* Approvazione n.7: menu completo senza modifiche alla palette o ai font. */
+@media(min-width:901px) and (max-width:1200px){.nav{grid-template-columns:200px 1fr auto;gap:10px}.brand span{font-size:20px}.brand img{width:64px;height:64px}.menu{gap:10px;font-size:13px}.nav>.btn{padding:12px 13px;font-size:12px}}
+@media(max-width:900px){.nav>.btn{font-size:12px;padding:10px 11px;white-space:normal;text-align:center;line-height:1.15}.menu a{padding:12px 14px}}
+
+@media(max-width:900px){.steps{grid-template-columns:1fr}.cards{grid-template-columns:1fr}}
+
+@media(max-width:900px){.nav{display:flex;align-items:center;justify-content:space-between;gap:8px}.nav>.btn{display:inline-flex!important;font-size:11px;padding:9px 8px;max-width:145px;line-height:1.1;text-align:center}.menu-toggle{margin-left:auto;flex-shrink:0}.brand{flex-shrink:0}.brand img{width:48px;height:48px}.menu{width:100%}}
 </style>
-
-<meta property="og:title" content="Benessere360 | Allenamento personalizzato e benessere femminile">
-<meta property="og:description" content="Percorsi personalizzati di allenamento e benessere femminile con supporto costante e approccio sostenibile.">
-<meta property="og:type" content="website">
-<meta name="theme-color" content="#25b8cf">
-
+<meta content="Benessere360 | Allenamento personalizzato e benessere femminile" property="og:title"/>
+<meta content="Percorsi personalizzati di allenamento e benessere femminile con supporto costante e approccio sostenibile." property="og:description"/>
+<meta content="website" property="og:type"/>
+<meta content="#25b8cf" name="theme-color"/>
 </head>
 <body>
-
 <header class="header">
-  <div class="wrap nav">
-    <a class="brand" href="index.html">
-      <img src="logo-benessere360.png" alt="Logo originale Benessere360">
-      <span>Benessere360</span>
-    </a>
-    <nav class="menu" aria-label="Navigazione principale">
-      <a href="home.html">Home</a>
-      <a href="percorsi.html">Percorsi</a>
-      <a href="chi-siamo.html">Chi siamo</a>
-      <a href="risultati.html">Risultati</a>
-      <a href="partner.html">Partner</a>
-    </nav>
-    <button class="menu-toggle" type="button" aria-label="Apri menu" aria-expanded="false">Menù</button>
-    <a class="btn" href="https://forms.gle/hT6ZBmqBuYM85QwWA" target="_blank" rel="noopener">Inizia ora</a>
-  </div>
+<div class="wrap nav">
+<a class="brand" href="index.html">
+<img alt="Logo originale Benessere360" src="logo-benessere360.png"/>
+<span>Benessere360</span>
+</a>
+<nav aria-label="Navigazione principale" class="menu"><a href="index.html">Home</a><a href="chi-siamo.html">Chi siamo</a><a href="percorsi.html">Percorsi</a><a href="risultati.html">Risultati</a><a href="partner.html">Partner</a><a href="#contatti">Contatti</a></nav>
+<button aria-expanded="false" aria-label="Apri menu" class="menu-toggle" type="button">Menù</button>
+<a class="btn" href="https://forms.gle/hT6ZBmqBuYM85QwWA" rel="noopener" target="_blank">Inizia il tuo percorso</a>
+</div>
 </header>
-
-
 <main>
 <section class="landing-overview">
- <div class="wrap landing-overview-grid">
-  <div class="landing-copy">
-   <div>
-    <h1>Ritrova il tuo benessere con un percorso costruito su misura.</h1>
-    <div class="checks">
-     <div class="check">Allenamento personalizzato</div>
-     <div class="check">Supporto costante</div>
-     <div class="check">Per ogni livello</div>
-    </div>
-    <a class="btn" href="https://forms.gle/hT6ZBmqBuYM85QwWA" target="_blank" rel="noopener">Inizia ora</a>
-   </div>
-   <div class="philosophy-block">
-    <div class="kicker">La nostra filosofia</div>
-    <h2>Benessere sostenibile, senza ossessioni.</h2>
-    <div class="checks">
-     <div class="check">Sostenibilità</div>
-     <div class="check">Risultati duraturi</div>
-     <div class="check">Niente ossessioni</div>
-     <div class="check">Sentirsi bene nel proprio corpo</div>
-    </div>
-    <a class="btn" href="percorsi.html">Scopri i percorsi</a>
-   </div>
-  </div>
-  <div class="photo motion auto-photo landing-overview-photo"><span class="placeholder-label">Spazio per la tua foto originale</span><img class="user-photo" src="pagina-iniziale-1.jpg" alt="" onerror="this.style.display='none'"></div>
- </div>
+<div class="wrap landing-overview-grid">
+<div class="landing-copy">
+<div>
+<h1>Ritrova il tuo benessere con un percorso costruito su misura.</h1><p class="intro-subtitle" style="font-size:17px;line-height:1.65;margin:20px 0 24px;max-width:630px">Allenamento e alimentazione sostenibili, con percorsi pensati per i tuoi obiettivi, il tuo livello e il tempo che hai davvero a disposizione.</p>
+<div class="checks">
+<div class="check">Allenamento personalizzato</div>
+<div class="check">Supporto costante</div>
+<div class="check">Per ogni livello</div>
+</div>
+<a class="btn" href="percorsi.html">Scopri il percorso adatto a te</a>
+</div>
+<div class="philosophy-block">
+<div class="kicker">La nostra filosofia</div>
+<h2>Benessere sostenibile, senza ossessioni.</h2>
+<div class="checks">
+<div class="check">Sostenibilità</div>
+<div class="check">Risultati duraturi</div>
+<div class="check">Niente ossessioni</div>
+<div class="check">Sentirsi bene nel proprio corpo</div>
+</div>
+<a class="btn" href="percorsi.html">Scopri i percorsi</a>
+</div>
+</div>
+<div class="photo motion auto-photo landing-overview-photo"><span class="placeholder-label">Spazio per la tua foto originale</span><img alt="" class="user-photo" onerror="this.style.display='none'" src="pagina-iniziale-1.jpg"/></div>
+</div>
 </section>
-</main>
-
-
-
-<footer class="footer">
-  <div class="wrap footer-grid">
-    <div>
-      <h3>Contatti</h3>
-      <p>Hai una domanda? Siamo qui per aiutarti.</p>
-    </div>
-    <div class="contact-box">
-      <h3>WhatsApp</h3>
-      <p>Scrivici direttamente su WhatsApp</p>
-      <p class="small">Per informazioni sui percorsi e per capire da dove partire.</p>
-      <strong>+39-3804688894</strong><br>
-      <a class="btn footer-action" href="https://wa.me/393804688894" target="_blank" rel="noopener">Scrivici</a>
-    </div>
-    <div class="contact-box">
-      <h3>Instagram</h3>
-      <p>Seguici su Instagram</p>
-      <p class="small">Contenuti, consigli e aggiornamenti dedicati al benessere.</p>
-      <strong>@benessere360</strong><br>
-      <a class="btn footer-action" href="https://www.instagram.com/benessere.360_?igsi=MXFlcHFpaGp3cXlvcQ%3D%3D&amp;utm_source=qr" target="_blank" rel="noopener">Seguici</a>
-    </div>
-  </div>
-  <div class="wrap" style="padding-top:28px;margin-top:28px;border-top:1px solid var(--line)">
-    <p class="small">Benessere360 · Allenamento personalizzato, nutrizione e abitudini sostenibili.</p>
-  </div>
+<section class="section" id="come-iniziare">
+<div class="wrap">
+<h2>Come iniziare il tuo percorso</h2>
+<div class="steps">
+<div class="step"><strong>1</strong><h3>Compila il questionario</h3><p>Raccontami i tuoi obiettivi e le tue esigenze.</p></div>
+<div class="step"><strong>2</strong><h3>Fissiamo una breve chiamata conoscitiva gratuita</h3><p>Mi aiuterà a capire meglio le tue esigenze ed eventuali difficoltà che hai incontrato in passato.</p></div>
+<div class="step"><strong>3</strong><h3>Ricevi la tua proposta personalizzata</h3><p>Ti presento il percorso più adatto a te.</p></div>
+<div class="step"><strong>4</strong><h3>Iniziamo insieme!</h3><p>Iniziamo a lavorare sui tuoi obiettivi.</p></div>
+</div>
+<p style="margin-top:22px"><a class="btn" href="https://forms.gle/hT6ZBmqBuYM85QwWA" rel="noopener" target="_blank">Inizia il tuo percorso</a></p>
+</div>
+</section><section class="section alt" id="programmi">
+<div class="wrap">
+<h2>I nostri percorsi</h2>
+<div class="cards">
+<article class="card"><h3>Personalizzato</h3><p>Un programma costruito sui tuoi obiettivi, livello ed esigenze.</p><a class="btn" href="percorsi.html#programma-personalizzato">Vedi dettagli</a></article>
+<article class="card"><h3>Premium</h3><p>Un percorso completo, che unisce allenamento personalizzato e programma alimentare della nutrizionista.</p><a class="btn" href="percorsi.html#percorso-benessere-premium">Vedi dettagli</a></article>
+</div>
+</div>
+</section></main>
+<footer class="footer" id="contatti">
+<div class="wrap footer-grid">
+<div>
+<h3>Contatti</h3>
+<p>Hai una domanda? Siamo qui per aiutarti.</p>
+</div>
+<div class="contact-box">
+<h3>WhatsApp</h3>
+<p>Scrivici direttamente su WhatsApp</p>
+<p class="small">Per informazioni sui percorsi e per capire da dove partire.</p>
+<strong>+39-3804688894</strong><br/>
+<a class="btn footer-action" href="https://wa.me/393804688894" rel="noopener" target="_blank">Hai qualche dubbio? Scrivimi su WhatsApp</a>
+</div>
+<div class="contact-box">
+<h3>Instagram</h3>
+<p>Seguici su Instagram</p>
+<p class="small">Contenuti, consigli e aggiornamenti dedicati al benessere.</p>
+<strong>@benessere.360_</strong><br/>
+<a class="btn footer-action" href="https://www.instagram.com/benessere.360_/" rel="noopener" target="_blank">Seguici</a>
+</div>
+</div>
+<div class="wrap" style="padding-top:28px;margin-top:28px;border-top:1px solid var(--line)">
+<p class="small">Benessere360 · Allenamento personalizzato, nutrizione e abitudini sostenibili.</p>
+</div>
 </footer>
-
-
-
 <script>
 document.addEventListener('DOMContentLoaded', function () {
   const toggle = document.querySelector('.menu-toggle');
@@ -412,5 +423,4 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 </script>
-
 </body></html>
